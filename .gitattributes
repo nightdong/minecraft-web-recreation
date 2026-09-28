@@ -1,0 +1,15 @@
+* text=auto
+
+# Windows launchers are intentionally CRLF because they are executed by
+# cmd.exe and their regression tests verify the packaged entry points.
+*.cmd text eol=crlf
+
+# Keep source/config files stable across Windows and Linux contributors.
+*.js text eol=lf
+*.mjs text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
