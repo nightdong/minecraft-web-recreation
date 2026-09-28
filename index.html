@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#171717" />
+    <meta name="description" content="A locally running, independently implemented voxel survival game." />
+    <title>Minecraft · Web Recreation</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%236c9d36' d='M0 0h16v6H0z'/%3E%3Cpath fill='%23845c3c' d='M0 6h16v10H0z'/%3E%3Cpath fill='%237dba43' d='M0 0h8v2H0zm10 3h6v3h-6z'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <canvas id="game-canvas" aria-label="游戏画面"></canvas>
+    <div id="ui-root"></div>
+    <div id="boot-status">正在加载世界引擎…</div>
+    <noscript>需要启用 JavaScript 和 WebGL 2 才能运行。</noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

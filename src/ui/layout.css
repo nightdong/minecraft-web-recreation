@@ -1,0 +1,38 @@
+/* Pixel-grid corrections, shared across all GUI scales. */
+.creative-tab { width: calc(21px * var(--s)); padding: calc(1px * var(--s)); }
+.inventory-panel {
+  padding: calc(6px * var(--s));
+}
+
+.inventory-top .crafting-area,
+.inventory-top .crafting-label {
+  left: calc(88px * var(--s));
+}
+
+.inventory-top .craft-arrow {
+  left: calc(125px * var(--s));
+  top: calc(22px * var(--s));
+  width: calc(10px * var(--s));
+  font-size: calc(12px * var(--s));
+}
+
+.inventory-top .result-slot {
+  left: calc(138px * var(--s));
+}
+
+.inventory-top .recipe-toggle {
+  /* Never cover the bottom armor slot. This space is below personal crafting. */
+  left: calc(101px * var(--s));
+}
+
+@media (max-width: 720px) {
+  .recipe-book {
+    /* Include the book in centering calculations instead of positioning it
+       outside a centered 176-pixel panel. Both remain visible at GUI scale 2. */
+    position: relative;
+    right: auto;
+    flex: none;
+    width: calc(110px * var(--s));
+    height: calc(177px * var(--s));
+  }
+}

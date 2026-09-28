@@ -1,0 +1,21 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.log
+tests/artifacts/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local project handoff / agent state. These contain machine-specific paths,
+# command history and internal working notes, not public project documentation.
+HANDOFF.md
+current.md
+board.md
+agent.md
